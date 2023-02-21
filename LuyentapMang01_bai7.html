@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[];
+    for (let i = 0; i <10 ; i++) {
+        a[i] = parseInt(prompt("nhập số nguyên :"));
+    }
+    let n = parseInt(prompt("nhập số kiểm tra :"));
+    for (let i = 0; i < 10 ; i++) {
+        if(a[i] === n ){
+            a[i].pop();
+        }
+        document.write(a[i]+"");
+    }
+</script>
+
+
+</body>
+</html>

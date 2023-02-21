@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+       let a = [];
+       let n = parseInt(prompt("nhập vào số lượng mảng :"));
+       let max = a[0];
+       let sum = 0 ;
+       let count = 0 ;
+       for (let i = 0; i < n; i++) {
+           a[i] = parseInt(prompt("nhập số nguyên :"));
+       }
+       for (let i = 0; i < n ; i++) {
+            sum += a[i];
+            count++;
+        }
+       document.write("TBC các số trong mảng là :"+sum / count);
+</script>
+
+</body>
+</html>

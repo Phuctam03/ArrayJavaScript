@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+      let s1 = prompt();
+      let s= []
+      for (let i = 0; i <s1.length ; i++) {
+          s[i] = s1.slice(i,i+1);
+          if( s[i] === "-"){
+              s[i] = "_";
+           }
+      }
+      document.write(s.join(""));
+</script>
+
+</body>
+</html>

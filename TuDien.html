@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 style="color: blue"> TỪ ĐIỂN ANH VIỆT</h3>
+<input type="text" id="input" value="">
+<input type="button" id="btn" value="Tìm" onclick="tudienANhviet()"></input>
+<script>
+function tudienANhviet(){
+    let a = ["hello","how","computer","strong","play"];
+
+    let b = document.getElementById("input").value ;
+    let t = "";
+    if( b === "hello"){
+         t = "xin chào";
+    }else if (b === "How"){
+         t = "Thế nào ";
+    }else if(b === "computer"){
+        t = "Máy tính";
+    }else if(b === "strong"){
+        t = "Sức mạnh";
+    }else {
+        t = "chơi";
+    }
+     document.write("ý nghĩa :"+t);
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

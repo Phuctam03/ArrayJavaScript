@@ -8,15 +8,32 @@
 <script>
       let s1 = prompt();
       let s2 = prompt();
-
-      if(s1 === s2 ){
-          document.write("2 chuỗi giống nhau");
-      }else {
-          document.write("2 chuỗi khác nhau");
+      let s = [];
+      let a =[];
+      let count = 0 ;
+      for (let i = 0; i <s1.length ; i++) {
+               s[i] = s1.slice(i,i+1);
       }
+      document.write(s.join("")+"<br/>");
+      for (let i = 0; i <s2.length ; i++) {
+          a[i] = s2.slice(i,i+1);
+      }
+      document.write(a.join("")+"<br/>");
 
-
-
+      if(s1.length !== s2.length){
+          document.write("2 chuỗi khác nhau");
+      }else {
+          for (let i = 0; i <s1.length ; i++) {
+              if(s[i] === a[i]){
+                   count++;
+              }
+          }
+          if(count === s1.length){
+              document.write("2 chuỗi giống nhau ");
+          }else {
+               document.write("2 chuỗi khác nhau");
+          }
+      }
 
 </script>
 
